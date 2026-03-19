@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Mar 19 16:06:08 2026
+# Process ID         : 115219
+# Current directory  : /home/brendan/synthesis_workspace/CORDIC/synthesis_logs
+# Command line       : vivado -mode batch -source synth_cordic_rotation_iterative.tcl -log vivado_cordic_rotation_iterative.log -journal vivado_cordic_rotation_iterative.jou
+# Log file           : /home/brendan/synthesis_workspace/CORDIC/synthesis_logs/vivado_cordic_rotation_iterative.log
+# Journal file       : /home/brendan/synthesis_workspace/CORDIC/synthesis_logs/vivado_cordic_rotation_iterative.jou
+# Running On         : bren-ubuntu24-04
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+# CPU Frequency      : 3690.676 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16630 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20925 MB
+# Available Virtual  : 11156 MB
+#-----------------------------------------------------------
+source synth_cordic_rotation_iterative.tcl
+# create_project -in_memory -part xc7a35tcpg236-1
+# read_verilog -sv /home/brendan/synthesis_workspace/CORDIC/cordic_rotation_iterative.sv
+# read_xdc -unmanaged /home/brendan/synthesis_workspace/CORDIC/synthesis_logs/clk_constraint.xdc
+# synth_design -top cordic_rotation_iterative -part xc7a35tcpg236-1
+Command: synth_design -top cordic_rotation_iterative -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1

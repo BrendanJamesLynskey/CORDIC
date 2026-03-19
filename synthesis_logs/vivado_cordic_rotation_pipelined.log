@@ -1,0 +1,261 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Mar 19 17:12:00 2026
+# Process ID         : 15928
+# Current directory  : /home/brendan/synthesis_workspace/CORDIC/synthesis_logs
+# Command line       : vivado -mode batch -source synth_cordic_rotation_pipelined.tcl -log vivado_cordic_rotation_pipelined.log -journal vivado_cordic_rotation_pipelined.jou
+# Log file           : /home/brendan/synthesis_workspace/CORDIC/synthesis_logs/vivado_cordic_rotation_pipelined.log
+# Journal file       : /home/brendan/synthesis_workspace/CORDIC/synthesis_logs/vivado_cordic_rotation_pipelined.jou
+# Running On         : bren-ubuntu24-04
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+# CPU Frequency      : 2279.182 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16630 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20925 MB
+# Available Virtual  : 15141 MB
+#-----------------------------------------------------------
+source synth_cordic_rotation_pipelined.tcl
+# set_param general.maxThreads 4
+# create_project -in_memory -part xc7a35tcpg236-1
+# read_verilog -sv /home/brendan/synthesis_workspace/CORDIC/cordic_rotation_pipelined.sv
+# set xdc_file "/home/brendan/synthesis_workspace/CORDIC/synthesis_logs/clock_cordic_rotation_pipelined.xdc"
+# set fp [open $xdc_file w]
+# puts $fp "create_clock -period 10.000 -name CLK \[get_ports CLK\]"
+# close $fp
+# read_xdc $xdc_file
+# synth_design -top cordic_rotation_pipelined -part xc7a35tcpg236-1
+Command: synth_design -top cordic_rotation_pipelined -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15953
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2216.379 ; gain = 482.844 ; free physical = 8161 ; free virtual = 13122
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cordic_rotation_pipelined' [/home/brendan/synthesis_workspace/CORDIC/cordic_rotation_pipelined.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_rotation_pipelined' (0#1) [/home/brendan/synthesis_workspace/CORDIC/cordic_rotation_pipelined.sv:28]
+WARNING: [Synth 8-6014] Unused sequential element gen_cordic_stage[13].z_pipe_reg[14] was removed.  [/home/brendan/synthesis_workspace/CORDIC/cordic_rotation_pipelined.sv:136]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2305.348 ; gain = 571.812 ; free physical = 8075 ; free virtual = 13035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2320.191 ; gain = 586.656 ; free physical = 8075 ; free virtual = 13035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2320.191 ; gain = 586.656 ; free physical = 8075 ; free virtual = 13035
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2320.191 ; gain = 0.000 ; free physical = 8082 ; free virtual = 13043
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/brendan/synthesis_workspace/CORDIC/synthesis_logs/clock_cordic_rotation_pipelined.xdc]
+Finished Parsing XDC File [/home/brendan/synthesis_workspace/CORDIC/synthesis_logs/clock_cordic_rotation_pipelined.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2458.207 ; gain = 0.000 ; free physical = 8083 ; free virtual = 13044
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2458.242 ; gain = 0.000 ; free physical = 8083 ; free virtual = 13044
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2458.242 ; gain = 724.707 ; free physical = 8110 ; free virtual = 13071
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2470.418 ; gain = 736.883 ; free physical = 8110 ; free virtual = 13071
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2470.418 ; gain = 736.883 ; free physical = 8110 ; free virtual = 13071
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2470.418 ; gain = 736.883 ; free physical = 8113 ; free virtual = 13075
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   18 Bit       Adders := 15    
+	   3 Input   18 Bit       Adders := 28    
++---Registers : 
+	               18 Bit    Registers := 43    
+	               16 Bit    Registers := 3     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input   18 Bit        Muxes := 28    
+	   3 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   3 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2470.418 ; gain = 736.883 ; free physical = 8128 ; free virtual = 13096
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2526.418 ; gain = 792.883 ; free physical = 8029 ; free virtual = 12996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2538.434 ; gain = 804.898 ; free physical = 8021 ; free virtual = 12989
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2546.441 ; gain = 812.906 ; free physical = 8015 ; free virtual = 12983
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2725.254 ; gain = 991.719 ; free physical = 7853 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2725.254 ; gain = 991.719 ; free physical = 7853 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2725.254 ; gain = 991.719 ; free physical = 7853 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2725.254 ; gain = 991.719 ; free physical = 7853 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2725.254 ; gain = 991.719 ; free physical = 7853 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2725.254 ; gain = 991.719 ; free physical = 7853 ; free virtual = 12820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   201|
+|3     |LUT1   |    81|
+|4     |LUT2   |   203|
+|5     |LUT3   |   501|
+|6     |FDRE   |   784|
+|7     |IBUF   |    20|
+|8     |OBUF   |    33|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2725.254 ; gain = 991.719 ; free physical = 7853 ; free virtual = 12820
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 2725.254 ; gain = 853.668 ; free physical = 7853 ; free virtual = 12820
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2725.262 ; gain = 991.719 ; free physical = 7853 ; free virtual = 12820
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2725.262 ; gain = 0.000 ; free physical = 8024 ; free virtual = 12991
+INFO: [Netlist 29-17] Analyzing 201 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'cordic_rotation_pipelined' is not ideal for floorplanning, since the cellview 'cordic_rotation_pipelined' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/brendan/synthesis_workspace/CORDIC/synthesis_logs/clock_cordic_rotation_pipelined.xdc]
+Finished Parsing XDC File [/home/brendan/synthesis_workspace/CORDIC/synthesis_logs/clock_cordic_rotation_pipelined.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2761.887 ; gain = 0.000 ; free physical = 8024 ; free virtual = 12991
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9b3dd395
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:38 . Memory (MB): peak = 2761.922 ; gain = 1149.527 ; free physical = 8024 ; free virtual = 12991
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2193.174; main = 2082.667; forked = 345.493
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3675.461; main = 2761.891; forked = 1028.016
+# report_utilization -file /home/brendan/synthesis_workspace/CORDIC/synthesis_logs/utilization_cordic_rotation_pipelined.rpt
+# report_timing_summary -file /home/brendan/synthesis_workspace/CORDIC/synthesis_logs/timing_cordic_rotation_pipelined.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+report_timing_summary: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2761.922 ; gain = 0.000 ; free physical = 7994 ; free virtual = 12962
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 19 17:12:52 2026...

@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Mar 19 16:05:43 2026
+# Process ID         : 114577
+# Current directory  : /home/brendan/synthesis_workspace/CORDIC/synthesis_logs
+# Command line       : vivado -mode batch -source synth_cordic_rotation_iterative.tcl -log vivado_cordic_rotation_iterative.log -journal vivado_cordic_rotation_iterative.jou
+# Log file           : /home/brendan/synthesis_workspace/CORDIC/synthesis_logs/vivado_cordic_rotation_iterative.log
+# Journal file       : /home/brendan/synthesis_workspace/CORDIC/synthesis_logs/vivado_cordic_rotation_iterative.jou
+# Running On         : bren-ubuntu24-04
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz
+# CPU Frequency      : 1597.547 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16630 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 20925 MB
+# Available Virtual  : 11943 MB
+#-----------------------------------------------------------
+source synth_cordic_rotation_iterative.tcl
+# create_project -in_memory -part xc7a35tcpg236-1
+# read_verilog -sv /home/brendan/synthesis_workspace/CORDIC/cordic_rotation_iterative.sv
+# set_property top cordic_rotation_iterative [current_fileset]
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 19 16:05:49 2026...
